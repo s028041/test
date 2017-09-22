@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="0.0">Vardas</node>
+    <node x="20.5" y="323.0">Somemath</node>
+    <node x="0.0" y="221.0">Factorial</node>
+    <node x="23.0" y="124.0">Hellothere</node>
+    <node x="216.0" y="221.0">OptionMenu</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Hellothere" target="Vardas">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="Somemath" target="Factorial">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="122.5" y="127.5" />
+  <SelectedNodes>
+    <node>Somemath</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

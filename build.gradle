@@ -1,0 +1,43 @@
+group 'eif.pirmas'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    compile group: 'joda-time', name: 'joda-time', version: '2.9.9'
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
+// https://mvnrepository.com/artifact/org.jaunt-lang/jaunt
+    compile group: 'org.jaunt-lang', name: 'jaunt', version: '1.9.0-RC4'
+
+}
+
+task(hello) {
+    doLast {
+        println "hello dear user!"
+    }
+}
+task upper {
+    doLast {
+        String someString = 'dOmiNykaS'
+        println "Original: " + someString
+        println "Upper case: " + someString.toUpperCase()
+    }
+}
+
+task twoTask {
+    dependsOn hello
+    dependsOn upper
+}
+
+
